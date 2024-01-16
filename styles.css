@@ -1,0 +1,139 @@
+/* import the font family */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@700&family=Poppins:wght@300;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@700&family=Exo+2&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #494949bd;
+}
+
+.instruction {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  color: #06ffee;
+  margin: 26px 30px;
+  text-shadow: 0 0 10px black;
+  list-style: none;
+  font-weight: bold;
+}
+
+header svg {
+  width: 90px;
+  height: 90px;
+}
+
+header {
+  text-align: center;
+  font-size: 70px;
+  color: black;
+  font-family: "Caveat", cursive;
+  text-shadow: 0 0 30px #06ffee;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  justify-content: center;
+  align-items: center;
+  margin: 82px 0px;
+}
+
+.btn button {
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  color: white;
+  font-size: 100px;
+  text-shadow: 0 0 10px black;
+  border: 3px solid #061442;
+  box-shadow: 0 0 12px aqua;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
+}
+
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+.pressed {
+  box-shadow: 0 0 12px rgb(46, 1, 1);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1500px) {
+  .btn {
+    flex-wrap: wrap;
+  }
+
+  header {
+    font-size: 40px;
+    padding-top: 60px;
+  }
+
+  .btn button {
+    width: 100px;
+    height: 100px;
+    font-size: 70px;
+  }
+
+  header svg {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .instruction {
+    font-size: 12px;
+    color: black;
+    text-shadow: 0 0 10px white;
+  }
+
+  .instruction h3 {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn button {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+  }
+
+  header {
+    font-size: 30px;
+    padding-top: 60px;
+  }
+}
